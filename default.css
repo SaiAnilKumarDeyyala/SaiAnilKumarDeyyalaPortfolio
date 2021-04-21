@@ -295,6 +295,7 @@ h6 { font-size: 16px;}
 
 #skills {
 	display: flex;
+	margin-bottom: 50px;
 	text-align: left;
 	justify-content: space-evenly;
 	background-color: var(--previewShadow);
@@ -391,42 +392,6 @@ h6 { font-size: 16px;}
 }
 
 
-@media screen and (max-width: 1200px){
-	.main-container{
-		width: 95%;
-	}
-}
-
-@media screen and (max-width: 800px){
-	.intro-wrapper{
-		grid-template-columns: 1fr;
-		grid-template-areas: 
-			'nav-wrapper'
-			'left-column'
-			'right-column'
-		;
-	}
-
-	.right-column{
-		justify-content: center;
-	}
-
-}
-
-@media screen and (max-width: 400px){
-	#preview-shadow{
-		max-width: 280px;
-		height: 180px;
-		padding-left: 10px;
-		padding-top: 10px;
-	}
-
-	#preview{
-		width: 280px;
-
-	}
-
-}
 
 .achievement-wrapper {
     display: grid;
@@ -494,4 +459,41 @@ a {
     -webkit-box-shadow: 9px 2px 12px 3px rgba(0,0,0,1);
     -moz-box-shadow: 9px 2px 12px 3px rgba(0,0,0,1);
     box-shadow: 9px 2px 12px 3px rgba(0,0,0,1);
+}
+
+@media screen and (max-width: 1200px){
+	.main-container{
+		width: 95%;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.intro-wrapper{
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			'nav-wrapper'
+			'left-column'
+			'right-column'
+		;
+	}
+
+	.right-column{
+		justify-content: center;
+	}
+
+}
+
+@media screen and (max-width: 400px){
+	#preview-shadow{
+		max-width: 280px;
+		height: 180px;
+		padding-left: 10px;
+		padding-top: 10px;
+	}
+
+	#preview{
+		width: 280px;
+
+	}
+
 }
